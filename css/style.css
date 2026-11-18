@@ -14813,40 +14813,56 @@ textarea {
   }
 }
 
-/* Reduce Hero Section Empty Space on Mobile */
+
+/* MOBILE HERO SECTION FIX */
 @media (max-width: 767px) {
 
-  .hero {
-    min-height: auto !important;
-    padding-bottom: 15px !important;
-  }
+    /* Remove unnecessary hero height and spacing */
+    .hero {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 90px !important;
+        padding-bottom: 55px !important;
+    }
 
-  .hero .container>.row {
-    padding-bottom: 0 !important;
-    margin-bottom: 0 !important;
-  }
+    /* Remove vertical spacing from the hero row */
+    .hero .container > .row {
+        min-height: 0 !important;
+        height: auto !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        align-items: flex-start !important;
+    }
 
-  .hero .img-wrap {
-    margin-bottom: 0 !important;
-  }
+    /* Hide robot image */
+    .hero .img-wrap,
+    .hero .col-lg-6:has(.img-wrap) {
+        display: none !important;
+    }
 
-  .hero .img-wrap img {
-    display: block;
-  }
+    /* Keep text properly positioned */
+    .hero .col-lg-6 {
+        width: 100%;
+        padding-top: 15px !important;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.25;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 30px !important;
+    }
+
+    .hero .mm {
+        margin-bottom: 0 !important;
+    }
 }
-
-/* Hide Hero Image on Mobile Screens */
-@media (max-width: 767px) {
-  .hero .img-wrap {
-    display: none !important;
-  }
-
-  .hero {
-    padding-bottom: 40px !important;
-    min-height: auto !important;
-  }
-}
-
 /* =================================
    RESPONSIVE FAQ SECTION
 ================================= */
