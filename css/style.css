@@ -15043,3 +15043,18 @@ textarea {
         font-size: 17px;
     }
 }
+/* Center FAQ Section Heading */
+.faq .section-title {
+    text-align: center !important;
+    margin: 0 auto;
+}
+
+.faq .section-title h2 {
+    text-align: center;
+}
+
+.faq .section-title p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
