@@ -14783,3 +14783,54 @@ textarea {
 .sec-services .service h3 {
   font-weight: 700;
 }
+
+/* Hero Image - Head to Waist Crop */
+.hero .img-wrap {
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .hero .img-wrap {
+    height: 480px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .hero .img-wrap {
+    height: 400px;
+  }
+}
+
+/* Reduce Hero Section Empty Space on Mobile */
+@media (max-width: 767px) {
+
+  .hero {
+    min-height: auto !important;
+    padding-bottom: 15px !important;
+  }
+
+  .hero .container>.row {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .hero .img-wrap {
+    margin-bottom: 0 !important;
+  }
+
+  .hero .img-wrap img {
+    display: block;
+  }
+}
